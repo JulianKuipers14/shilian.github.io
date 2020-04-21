@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>星轨试炼计算器</title>
+</head>
+<body>
+    <h1>星轨家族残血计算器</h1>
+    Boss名（拼音简写即可）: <input type="text" id="boss"><br>
+    残血量百分比: <input type="number" id="percent"><br>
+    <button output onclick="cal()">计算</button><br>
+
+    <script type="text/javascript">
+        function cal() {
+            var BossBlood = { 'ggz': 821950, "gn": 953190, 'tyx': 980870, 'zfy': 1193850, 'lj': 1421550, 'lm': 1587290, 'kx': 1814120, 'zy': 2027200, 'pa': 2223690, 'hml': 2390040, 'lrs': 2595840, 'zr': 2839680, 'llw': 3003000, 'zj': 343240, 'fs': 3410000, 'yby': 3613170, 'yht': 3747600, 'ssx': 3959550, 'tzcq': 4236190, 'xs': 45272220, 'gj': 4781000, 'dc': 5778500, 'bf': 6987000, 'fl': 8373750, 'drj': 8909100, 'ysw': 9983400, 'sl': 11790350, 'nyn': 13207000, 'dfs': 15029700, 'nmw': 1703200, 'ls': 18794700, 'xy': 20704550, 'zj': 23132500, 'gz': 25065000, 'jk': 26932500, 'bq': 29805700, 'gj': 31909000, 'x': 33980000, 'mlj': 35405100, 'jw': 40624450, 'lb': 42513000, 'els': 44041800, 'lyj': 46060950, 'mdld': 47898650, 'lx': 57547400, 'xh': 68918750, 'wq': 82521000, 'yr': 99496950, 'tlm': 119536950, 'dkl': 144609600, 'mljp': 262260000, 'q': 00000 }
+            var bossget = document.getElementById("boss").value
+
+            var add1 = parseInt(BossBlood[bossget]);
+            var add2 = document.getElementById("percent").value;
+            var summ = add1 * add2 * 0.01;
+            window.alert(summ)
+        }
+
+    </script>
+
+    ☆☆☆☆☆☆☆☆☆☆本网页仅限qq空间15服星轨家族试炼使用☆☆☆☆☆☆☆☆☆☆<br>
+    ☆☆☆☆☆☆☆☆☆不开放任何私下传播授权|他人劳动成果请自重☆☆☆☆☆☆☆☆☆<br>
+    ☆☆☆☆☆☆☆未经允许进行的传播下载造成的损失本人不负任何责任☆☆☆☆☆☆☆<br>
+    ————————————contact: qq:331940553———————————<br>
+    ———————————contact: juliancaiseu@gmail.com—————————<br>
+    —————————————空间15服慕容央出品————————————<br>
+</body>
+</html >
