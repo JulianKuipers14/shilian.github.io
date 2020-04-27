@@ -5,19 +5,10 @@
     <title>星轨试炼计算器</title>
 </head>
 <body>
-    <h1>星轨家族残血计算器</h1>
+    <h1>星轨残血计算器</h1>
     欲上青天揽明月，你是人间美好<br>
-    -----update history:<br>
-    <br>
-    21.04.20: <br>
-    -修复boss米勒嘉的识别问题<br>
-    -网页正式上线<br>
-    -增加验证<br>
-    21.04.20: <br>
-    -修复boss甄姬昭君的混淆问题-甄姬请使用zhj<br>
-    -修复boss干将郭嘉的混淆问题-干将请使用gaj<br>
-    <br>
-   
+    甄姬=zhj<br>
+    干将=gaj<br>
     Userid: <input type="text" id="user"><br>
     <br>
     Boss名（拼音简写）: <input type="text" id="boss"><br>
@@ -35,7 +26,8 @@
                 var bossget = document.getElementById("boss").value
                 var add1 = parseInt(BossBlood[bossget]);
                 var add2 = document.getElementById("percent").value;
-                var summ = add1 * add2 * 0.01;
+                var summ = add1 * add2 * 0.01*0.0001;
+                summ=.toFixed(2)
                 window.alert(summ)
             }
             else
@@ -48,7 +40,17 @@
     ✯来源非星轨的网页造成的损失本人及星轨概不负责✯<br>
     ✯contact:qq:331940553 email:juliancaiseu@gmail.com✯<br>
     —————————————————————————————————<br>
-   
+       -----update history:<br>
+    <br>
+    21.04.20: <br>
+    -修复boss米勒嘉的识别问题<br>
+    -网页正式上线<br>
+    -增加验证<br>
+    21.04.20: <br>
+    -修复boss甄姬昭君的混淆问题-甄姬请使用zhj<br>
+    -修复boss干将郭嘉的混淆问题-干将请使用gaj<br>
+    -为方便查看输出调整单位为万并保留两位小数<br>
+    <br>
     -Copyright (c) 2020 慕容央|星轨. All rights reserved-<br>.
 </body>
 </html >
